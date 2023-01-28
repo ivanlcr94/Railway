@@ -31,6 +31,8 @@ const process_arguments = minimist(process.argv.slice(2), options)
 
 // const PORT = process_arguments.puerto;
 
+const PORT = process.env.PORT
+
 // modo cluster 
 
 import cluster from 'node:cluster';
