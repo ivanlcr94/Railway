@@ -2,12 +2,12 @@
   "name": "proyecto-final-backend-coderhouse",
   "version": "1.0.0",
   "description": "Proyecto final del curso de Desarrollo Backend de Coderhouse.",
-  "main": "./server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "mocha ./src/test/products.test.js",
     "dev": "nodemon -r dotenv/config server.js",
-    "start": "node server.js npm install --omit=dev"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "ivan Romero",
