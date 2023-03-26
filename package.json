@@ -33,11 +33,6 @@
     "socket.io": "^4.5.4",
     "twilio": "3.83.1",
     "winston": "3.8.2"
-  },
-  "devDependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.1.0",
-    "nodemon": "2.0.19",
-    "supertest": "^6.3.1"
   }
+
 }
