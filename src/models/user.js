@@ -1,8 +1,23 @@
-import mongoose from "mongoose";
+import { Schema, model } from "mongoose";
+import { MessageSchema } from "./Message.js";
 
-const userSchema = mongoose.Schema({
-  username: String,
-  password: String,
-});
+const userSchema = new Schema(
+  {
+    username: { type: String, require: true },
+    email: { type: String, require: true },
+    password: { type: String, require: true },
+    address: { type: String, require: true },
+    age: { type: Number, require: true },
+    phone: { type: String, require: true },
+    image: { type: String, require: true },
+    cart_id: { type: String, require: true },
+    messages: { type: [MessageSchema] },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-export const User = mongoose.model("User", userSchema);
+const User = model("User", userSchema);
+
+export default User;
